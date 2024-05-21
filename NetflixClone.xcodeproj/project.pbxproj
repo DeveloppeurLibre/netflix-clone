@@ -14,6 +14,7 @@
 		64288F752BFCE28400670D43 /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64288F742BFCE28400670D43 /* Media.swift */; };
 		64288F772BFCE47A00670D43 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64288F762BFCE47A00670D43 /* MediaCell.swift */; };
 		64288F792BFCEB3700670D43 /* CategorySlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64288F782BFCEB3700670D43 /* CategorySlider.swift */; };
+		64288F7B2BFCEF2500670D43 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64288F7A2BFCEF2500670D43 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		64288F742BFCE28400670D43 /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 		64288F762BFCE47A00670D43 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
 		64288F782BFCEB3700670D43 /* CategorySlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySlider.swift; sourceTree = "<group>"; };
+		64288F7A2BFCEF2500670D43 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				64288F662BFCD98D00670D43 /* NetflixCloneApp.swift */,
 				64288F682BFCD98D00670D43 /* ContentView.swift */,
 				64288F762BFCE47A00670D43 /* MediaCell.swift */,
+				64288F7A2BFCEF2500670D43 /* HomeView.swift */,
 				64288F782BFCEB3700670D43 /* CategorySlider.swift */,
 				64288F742BFCE28400670D43 /* Media.swift */,
 				64288F6A2BFCD98E00670D43 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				64288F792BFCEB3700670D43 /* CategorySlider.swift in Sources */,
 				64288F692BFCD98D00670D43 /* ContentView.swift in Sources */,
 				64288F672BFCD98D00670D43 /* NetflixCloneApp.swift in Sources */,
+				64288F7B2BFCEF2500670D43 /* HomeView.swift in Sources */,
 				64288F772BFCE47A00670D43 /* MediaCell.swift in Sources */,
 				64288F752BFCE28400670D43 /* Media.swift in Sources */,
 			);
