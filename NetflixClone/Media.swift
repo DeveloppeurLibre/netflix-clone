@@ -4,7 +4,8 @@
 
 import Foundation
 
-struct Media {
+struct Media: Identifiable {
+    let id = UUID()
     let title: String
     let coverURL: URL?
     let isNetflixProduction: Bool
