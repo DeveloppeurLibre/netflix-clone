@@ -7,6 +7,7 @@ import SwiftUI
 struct MediaDetails: View {
     
     let media: Media
+    @State private var selectedOption = 0
     
     var body: some View {
         ScrollView {
@@ -109,6 +110,26 @@ struct MediaDetails: View {
                         }
                         .padding(.vertical, 8)
                         .padding(.horizontal, 24)
+                    }
+                    
+                    // MARK: Options
+                    
+                    HStack(spacing: 16) {
+                        SelectableHeader(
+                            title: "Episodes",
+                            isSelected: .constant(selectedOption == 0),
+                            onTap: { selectedOption = 0 }
+                        )
+                        SelectableHeader(
+                            title: "More Like This",
+                            isSelected: .constant(selectedOption == 1),
+                            onTap: { selectedOption = 1 }
+                        )
+                        SelectableHeader(
+                            title: "Trailers & More",
+                            isSelected: .constant(selectedOption == 2),
+                            onTap: { selectedOption = 2 }
+                        )
                     }
 
                 }

@@ -16,6 +16,7 @@
 		64288F792BFCEB3700670D43 /* CategorySlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64288F782BFCEB3700670D43 /* CategorySlider.swift */; };
 		64288F7B2BFCEF2500670D43 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64288F7A2BFCEF2500670D43 /* HomeView.swift */; };
 		64288F7D2BFCFF9600670D43 /* MediaDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64288F7C2BFCFF9600670D43 /* MediaDetails.swift */; };
+		64E651AD2BFDFA2A00726CEB /* SelectableHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E651AC2BFDFA2A00726CEB /* SelectableHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		64288F782BFCEB3700670D43 /* CategorySlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySlider.swift; sourceTree = "<group>"; };
 		64288F7A2BFCEF2500670D43 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		64288F7C2BFCFF9600670D43 /* MediaDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetails.swift; sourceTree = "<group>"; };
+		64E651AC2BFDFA2A00726CEB /* SelectableHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				64288F682BFCD98D00670D43 /* ContentView.swift */,
 				64288F762BFCE47A00670D43 /* MediaCell.swift */,
 				64288F7A2BFCEF2500670D43 /* HomeView.swift */,
+				64E651AC2BFDFA2A00726CEB /* SelectableHeader.swift */,
 				64288F7C2BFCFF9600670D43 /* MediaDetails.swift */,
 				64288F782BFCEB3700670D43 /* CategorySlider.swift */,
 				64288F742BFCE28400670D43 /* Media.swift */,
@@ -158,6 +161,7 @@
 				64288F7B2BFCEF2500670D43 /* HomeView.swift in Sources */,
 				64288F7D2BFCFF9600670D43 /* MediaDetails.swift in Sources */,
 				64288F772BFCE47A00670D43 /* MediaCell.swift in Sources */,
+				64E651AD2BFDFA2A00726CEB /* SelectableHeader.swift in Sources */,
 				64288F752BFCE28400670D43 /* Media.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
