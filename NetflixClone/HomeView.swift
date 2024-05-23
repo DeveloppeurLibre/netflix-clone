@@ -8,8 +8,8 @@ struct HomeView: View {
     var body: some View {
         ScrollView {
             VStack {
-                CategorySlider(title: "Ensemble TV Comedies", mediums: previewMediums)
-                CategorySlider(title: "US TV Programs", mediums: previewMediums)
+                CategorySlider(title: "Ensemble TV Comedies", mediums: [previewFriends])
+                CategorySlider(title: "US TV Programs", mediums: [previewFriends])
             }
             .padding(8)
             .padding(.top, 50)

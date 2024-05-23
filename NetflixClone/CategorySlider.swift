@@ -7,7 +7,7 @@ import SwiftUI
 struct CategorySlider: View {
     
     let title: String
-    let mediums: [Media]
+    let mediums: [MediaPreview]
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -17,7 +17,7 @@ struct CategorySlider: View {
             
             ScrollView(.horizontal) {
                 HStack {
-                    ForEach(previewMediums) { media in
+                    ForEach([previewFriends]) { media in
                         MediaCell(media: media)
                     }
                 }
@@ -30,5 +30,5 @@ struct CategorySlider: View {
 }
 
 #Preview {
-    CategorySlider(title: "Preview Category", mediums: previewMediums)
+    CategorySlider(title: "Preview Category", mediums: [previewFriends])
 }

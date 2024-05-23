@@ -6,7 +6,7 @@ import SwiftUI
 
 struct MediaDetails: View {
     
-    let media: Media
+    let show: TVShow
     @State private var selectedOption: Option = .episodes
     
     var body: some View {
@@ -20,6 +20,15 @@ struct MediaDetails: View {
                     synopsis
                     actionsButtonRow
                     optionsSection
+                    
+                    switch selectedOption {
+                    case .episodes:
+                        SeasonsView(seasons: show.seasons)
+                    case .more:
+                        Text("A compléter")
+                    case .trailers:
+                        Text("A compléter")
+                    }
                 }
                 .padding(8)
             }
@@ -39,7 +48,7 @@ struct MediaDetails: View {
     // MARK: - Private subviews
     
     private var headerPreview: some View {
-        AsyncImage(url: media.coverURL) { image in
+        AsyncImage(url: show.preview.coverURL) { image in
             image
                 .resizable()
                 .aspectRatio(contentMode: .fill)
@@ -53,18 +62,18 @@ struct MediaDetails: View {
     }
     
     private var title: some View {
-        Text(media.title)
+        Text(show.preview.title)
             .font(.system(size: 20, weight: .bold))
             .foregroundStyle(Color.white)
     }
     
     private var mainData: some View {
         HStack {
-            Text("98% match")
+            Text("\(show.preview.percentageMatch)% match")
                 .foregroundStyle(Color(red: 0.455, green: 0.788, blue: 0.451))
-            Text("2002")
+            Text(show.preview.year)
                 .foregroundStyle(Color.white)
-            Text("12 seasons")
+            Text("\(show.seasons.count) seasons")
                 .foregroundStyle(Color.white)
         }
     }
@@ -87,7 +96,7 @@ struct MediaDetails: View {
     }
     
     private var synopsis: some View {
-        Text("Les péripéties de 6 jeunes newyorkais liés par une profonde amitié. Entre amour, travail, famille, ils partagent leurs bonheurs et leurs soucis au Central Perk, leur café favori...")
+        Text(show.preview.synopsis)
             .foregroundStyle(Color.white)
             .font(.system(size: 14))
     }
@@ -131,5 +140,10 @@ struct MediaDetails: View {
 }
 
 #Preview {
-    MediaDetails(media: previewMediums[0])
+    MediaDetails(
+        show: TVShow(
+            preview: previewFriends,
+            seasons: [season9Friends, season10Friends]
+        )
+    )
 }

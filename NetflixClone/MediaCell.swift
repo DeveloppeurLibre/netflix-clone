@@ -6,7 +6,7 @@ import SwiftUI
 
 struct MediaCell: View {
     
-    let media: Media
+    let media: MediaPreview
     
     var body: some View {
         AsyncImage(url: media.coverURL) { image in
@@ -75,5 +75,5 @@ struct MediaCell: View {
 }
 
 #Preview {
-    MediaCell(media: previewMediums[2])
+    MediaCell(media: previewFriends)
 }
