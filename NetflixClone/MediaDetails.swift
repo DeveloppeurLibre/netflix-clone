@@ -25,7 +25,7 @@ struct MediaDetails: View {
                     case .episodes:
                         SeasonsView(seasons: show.seasons)
                     case .more:
-                        Text("A compléter")
+                        SimilarView(suggestions: show.similars)
                     case .trailers:
                         Text("A compléter")
                     }
@@ -143,7 +143,8 @@ struct MediaDetails: View {
     MediaDetails(
         show: TVShow(
             preview: previewFriends,
-            seasons: [season9Friends, season10Friends]
+            seasons: [season9Friends, season10Friends], 
+            similars: [previewFriends]
         )
     )
 }

@@ -7,4 +7,5 @@ import Foundation
 struct TVShow {
     let preview: MediaPreview
     let seasons: [Season]
+    let similars: [MediaPreview]
 }
