@@ -27,7 +27,7 @@ struct MediaDetails: View {
                     case .more:
                         SimilarView(suggestions: show.similars)
                     case .trailers:
-                        Text("A compléter")
+                        TrailersView(trailersYouTubeIds: show.trailersYTids)
                     }
                 }
                 .padding(8)
@@ -144,7 +144,8 @@ struct MediaDetails: View {
         show: TVShow(
             preview: previewFriends,
             seasons: [season9Friends, season10Friends], 
-            similars: [previewFriends]
+            similars: [previewFriends], 
+            trailersYTids: ["ZpBX03159BE", "7yY6qANStNg"]
         )
     )
 }
